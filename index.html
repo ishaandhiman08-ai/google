@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYBERSHIELD // Email Phishing, Zero-Day & Indian Cyber Scam Defense</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mode-citizen">
+  <!-- Ambient background cyber effects -->
+  <div class="cyber-grid-overlay"></div>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Role Notification Bar -->
+  <div class="role-banner">
+    <div class="role-banner-content">
+      <div class="role-indicator">
+        <span class="role-badge citizen-badge" id="currentRoleBadge">
+          <i data-lucide="users"></i> CITIZEN PUBLIC PORTAL
+        </span>
+        <span class="role-desc" id="currentRoleDesc">
+          Public Mode: Citizen reporting open. Phone numbers & financial loss values are privacy-protected.
+        </span>
+      </div>
+      <div class="role-switch-wrap">
+        <span class="switch-label">Switch View:</span>
+        <button class="btn-role-switch" id="roleSwitchBtn">
+          <i data-lucide="shield-alert"></i>
+          <span id="roleSwitchBtnText">Switch to Cyber Cell Admin</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="brand-icon">
+          <i data-lucide="shield-alert"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">CYBERSHIELD</span>
+          <span class="brand-sub">INDIA THREAT INTEL & FRAUD DEFENSE</span>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#threat-overview" class="nav-link active">Overview</a>
+        <a href="#zero-day-section" class="nav-link">Zero-Day Engine</a>
+        <a href="#payment-scams" class="nav-link">UPI & Cyber Scams</a>
+        <a href="#ids-section" class="nav-link">IDS &amp; Network</a>
+        <a href="#two-factor-biometric" class="nav-link">2FA &amp; Biometrics (UEBA)</a>
+        <a href="#scam-reporting" class="nav-link">Citizen Forum & Tips</a>
+        <a href="#live-scanner" class="nav-link">Phishing Lab</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="system-status-pill online">
+          <span class="status-dot"></span>
+          <span class="status-label">SYS_ACTIVE • LIVE</span>
+        </div>
+        <a href="#scam-reporting" class="btn btn-primary-glow btn-sm">
+          <i data-lucide="file-plus"></i>
+          <span>Report Scam / Tip</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    
+    <!-- ADMIN-ONLY EXCLUSIVE SECTION: RUPEES TRAPPED IN SCAMS -->
+    <section class="admin-financial-section" id="adminFinancialPanel">
+      <div class="section-container">
+        <div class="admin-panel-card">
+          <div class="admin-panel-header">
+            <div class="admin-title-wrap">
+              <div class="admin-seal">
+                <i data-lucide="lock"></i>
+              </div>
+              <div>
+                <div class="admin-eyebrow">RESTRICTED ACCESS • LAW ENFORCEMENT & CYBER CELL COMMAND</div>
+                <h3 class="admin-title">National Financial Fraud & Trapped Rupees Telemetry</h3>
+              </div>
+            </div>
+            <div class="admin-badge-live">
+              <span class="live-dot-red"></span>
+              <span>CONFIDENTIAL FIU SURVEILLANCE</span>
+            </div>
+          </div>
+
+          <div class="admin-metrics-grid">
+            
+            <div class="admin-metric-card highlight-rupee">
+              <div class="admin-metric-icon">
+                <i data-lucide="indian-rupee"></i>
+              </div>
+              <div class="admin-metric-body">
+                <span class="admin-metric-label">Total Rupees Trapped in Reported Scams</span>
+                <div class="admin-metric-value" id="adminTotalRupees">₹ 18,42,85,600</div>
+                <p class="admin-metric-sub">Across 1,482 verified citizen cases nationwide this fiscal quarter</p>
+              </div>
+              <div class="admin-metric-tag danger">SURGE: +22.4%</div>
+            </div>
+
+            <div class="admin-metric-card">
+              <div class="admin-metric-icon frozen">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <div class="admin-metric-body">
+                <span class="admin-metric-label">Amount Frozen at Payment Gateways</span>
+                <div class="admin-metric-value text-safe" id="adminFrozenRupees">₹ 7,12,30,000</div>
+                <p class="admin-metric-sub">Lien marked in suspect mule accounts within the golden 2-hour window</p>
+              </div>
+              <div class="admin-metric-tag safe">38.6% RECOVERY RATE</div>
+            </div>
+
+            <div class="admin-metric-card">
+              <div class="admin-metric-icon alert">
+                <i data-lucide="phone-call"></i>
+              </div>
+              <div class="admin-metric-body">
+                <span class="admin-metric-label">Active Cyber Cell FIRs</span>
+                <div class="admin-metric-value" id="adminActiveCases">842 Cases</div>
+                <p class="admin-metric-sub">Digital Arrest (312), UPI PIN Frauds (388), Fake Shopping (142)</p>
+              </div>
+              <div class="admin-metric-tag info">MULE ACCOUNTS TRACED</div>
+            </div>
+
+          </div>
+
+          <div class="admin-notice-bar">
+            <i data-lucide="alert-octagon"></i>
+            <span><strong>DEMO NOTICE:</strong> This prototype displays simulated metrics and synthetic examples. Citizen contact numbers stay masked in every view; this client-side demo is not an official secure records system.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section with Centered Project Name -->
+    <section class="hero-section">
+      <div class="hero-container">
+        
+        <div class="hero-badge">
+          <span class="badge-radar"><i data-lucide="radar"></i></span>
+          <span class="badge-text">CENTRALIZED CYBER DEFENSE, EMAIL PHISHING & INDIAN FINANCIAL SCAM PORTAL</span>
+        </div>
+
+        <!-- Centered Project Title with futuristic typography -->
+        <div class="hero-title-wrapper">
+          <div class="cyber-glitch-tag">PHISHGUARD DIGITAL AI</div>
+          <h1 class="hero-title">
+            <span class="title-gradient">CYBER SECURITY</span>
+            <span class="title-sub-glitch">&amp; TRUST IN AI</span>
+          </h1>
+          <p class="hero-subtitle">
+            Autonomous Threat Intelligence &amp; PhishGuard Digital AI Defense Ecosystem — Neutralizing Zero-Day Exploits, Spear-Phishing, UPI Payment Scams, and Digital Arrests Across India.
+          </p>
+        </div>
+
+        <!-- DUAL-COLUMN ROLE SWITCHER BENEATH TAGLINE (PUBLIC VS ADMIN) -->
+        <div class="hero-role-selector-wrap">
+          <div class="hero-role-pill-label">
+            <i data-lucide="shield"></i> SELECT ACTIVE PORTAL VIEWPOINT
+          </div>
+          <div class="hero-role-columns">
+            
+            <!-- Column 1: Public Citizen Portal -->
+            <div class="hero-role-card active" id="heroRoleCitizen">
+              <div class="role-card-top">
+                <div class="role-icon-box green">
+                  <i data-lucide="users"></i>
+                </div>
+                <div class="role-status-chip active">
+                  <span class="role-active-dot"></span>
+                  <span class="role-chip-text">ACTIVE VIEW</span>
+                </div>
+              </div>
+              <h3 class="role-card-heading">Public Citizen Portal</h3>
+              <p class="role-card-summary">
+                Open for all citizens across India. Read verified scam procedures, inspect zero-day threat defense, and submit community safety suggestions with strictly masked privacy.
+              </p>
+              <div class="role-card-footer">
+                <span class="role-feature-tag"><i data-lucide="check"></i> DPDP Privacy Masked</span>
+                <span class="role-feature-tag"><i data-lucide="check"></i> Safety Ideas Forum</span>
+              </div>
+            </div>
+
+            <!-- Column 2: Cyber Cell Admin Portal -->
+            <div class="hero-role-card" id="heroRoleAdmin">
+              <div class="role-card-top">
+                <div class="role-icon-box red">
+                  <i data-lucide="shield-alert"></i>
+                </div>
+                <div class="role-status-chip admin-chip">
+                  <span class="role-chip-text">RESTRICTED COMMAND</span>
+                </div>
+              </div>
+              <h3 class="role-card-heading">Cyber Cell Admin Portal</h3>
+              <p class="role-card-summary">
+                Demo administrative view for inspecting simulated aggregate metrics. This prototype does not provide access to verified case records or unmasked citizen contact details.
+              </p>
+              <div class="role-card-footer">
+                <span class="role-feature-tag text-gold"><i data-lucide="indian-rupee"></i> Trapped Rupees View</span>
+                <span class="role-feature-tag text-cyan"><i data-lucide="phone"></i> Masked Contact Data</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Quick actions -->
+        <div class="hero-cta-group">
+          <a href="#threat-overview" class="btn btn-primary-glow">
+            <i data-lucide="activity"></i>
+            <span>Inspect Threat Overview</span>
+          </a>
+          <a href="#two-factor-biometric" class="btn btn-secondary-cyber">
+            <i data-lucide="fingerprint"></i>
+            <span>2FA &amp; Biometric Identity Lab</span>
+          </a>
+          <a href="#zero-day-section" class="btn btn-secondary-cyber">
+            <i data-lucide="cpu"></i>
+            <span>Zero-Day Detection Engine</span>
+          </a>
+          <a href="#scam-reporting" class="btn btn-secondary-cyber">
+            <i data-lucide="lightbulb"></i>
+            <span>Citizen Tips &amp; Safety Ideas</span>
+          </a>
+        </div>
+
+        <!-- Live Ticker strip -->
+        <div class="ticker-strip">
+          <div class="ticker-label">
+            <i data-lucide="radio"></i>
+            <span>ALERT DISPATCH:</span>
+          </div>
+          <div class="ticker-content" id="tickerStream">
+            <span class="ticker-item"><strong class="threat-red">[UPI PIN FRAUD ALERT]</strong> Fraudsters sending fake "Receive ₹2,500 Cash" collect requests on OLX</span>
+            <span class="ticker-item"><strong class="threat-amber">[DIGITAL ARREST SCAM]</strong> Impersonating Mumbai Police / CBI over Skype video calls</span>
+            <span class="ticker-item"><strong class="threat-cyan">[ZERO-DAY BLOCKED]</strong> Anomaly engine halted polymorphic PDF exploit before hash was generated</span>
+            <span class="ticker-item"><strong class="threat-red">[FAKE SHOPPING ALERT]</strong> Cloned courier fee portal (₹5 delivery charge) draining bank cards</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: Cybersecurity Threat Overview (4 Required Metrics) -->
+    <section class="overview-section" id="threat-overview">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <div class="header-left">
+            <div class="section-eyebrow">
+              <i data-lucide="crosshair"></i>
+              <span>TELEMETRY METRICS</span>
+            </div>
+            <h2 class="section-title">Cybersecurity Threat Overview</h2>
+            <p class="section-desc">Real-time metrics monitored across mail gateways, API payment endpoints, and citizen incident reports.</p>
+          </div>
+          
+          <div class="header-right">
+            <div class="time-range-selector">
+              <button class="time-btn active" data-range="24h">24H</button>
+              <button class="time-btn" data-range="7d">7D</button>
+              <button class="time-btn" data-range="30d">30D</button>
+            </div>
+            <button class="btn btn-refresh" id="refreshStatsBtn" title="Sync live metrics">
+              <i data-lucide="refresh-cw"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4 REQUIRED METRIC CARDS WITH DEEP FORENSIC CLICK TRIGGERS -->
+        <div class="metrics-grid">
+          
+          <!-- Card 1: Number of emails analyzed -->
+          <div class="metric-card clickable-card" data-inspect="emails" title="Click to view full inbound mailstream forensics">
+            <div class="card-glow-border"></div>
+            <div class="card-inner">
+              <div class="card-header">
+                <div class="card-icon-box cyan">
+                  <i data-lucide="mail-check"></i>
+                </div>
+                <div class="card-badge trend-up">
+                  <i data-lucide="trending-up"></i>
+                  <span>+14.8%</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <span class="metric-label">Number of Emails Analyzed</span>
+                <div class="metric-value-row">
+                  <h3 class="metric-number" id="emailsAnalyzedCount">184,920</h3>
+                  <span class="metric-unit">inbox msgs</span>
+                </div>
+                <p class="metric-caption">Scanned via zero-day behavioral heuristics and SPF/DKIM authentication</p>
+              </div>
+              <div class="card-footer">
+                <div class="progress-info">
+                  <span>Inspection Throughput</span>
+                  <span class="progress-val">99.98% clean rate</span>
+                </div>
+                <div class="cyber-progress-bar">
+                  <div class="cyber-progress-fill cyan-fill" style="width: 88%;"></div>
+                </div>
+                <div class="inspect-action-bar cyan">
+                  <i data-lucide="zoom-in"></i>
+                  <span>Click for Domain Clusters &amp; Inbound Log</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Threats detected -->
+          <div class="metric-card warning-card clickable-card" data-inspect="threats" title="Click to inspect who has threatened, attacker source IPs, and malicious payloads">
+            <div class="card-glow-border danger"></div>
+            <div class="card-inner">
+              <div class="card-header">
+                <div class="card-icon-box red">
+                  <i data-lucide="shield-alert"></i>
+                </div>
+                <div class="card-badge trend-danger">
+                  <span class="live-ping"></span>
+                  <span>CRITICAL</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <span class="metric-label">Threats Detected</span>
+                <div class="metric-value-row">
+                  <h3 class="metric-number text-danger" id="threatsDetectedCount">3,418</h3>
+                  <span class="metric-unit danger">intercepted</span>
+                </div>
+                <p class="metric-caption">Zero-day phishing lures, fake payment links &amp; ransomware droppers</p>
+              </div>
+              <div class="card-footer">
+                <div class="threat-categories">
+                  <span class="tag-chip danger-chip">2,180 Phish</span>
+                  <span class="tag-chip warning-chip">890 Spoofs</span>
+                  <span class="tag-chip malware-chip">348 Zero-Days</span>
+                </div>
+                <div class="inspect-action-bar danger">
+                  <i data-lucide="crosshair"></i>
+                  <span>Click to see Who Threatened &amp; Source IPs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Risk score -->
+          <div class="metric-card clickable-card" data-inspect="risk" title="Click to view mathematical formula and 14 heuristic vector weights">
+            <div class="card-glow-border amber"></div>
+            <div class="card-inner">
+              <div class="card-header">
+                <div class="card-icon-box amber">
+                  <i data-lucide="gauge"></i>
+                </div>
+                <div class="card-badge risk-badge" id="riskLevelBadge">
+                  <span>ELEVATED</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <span class="metric-label">Risk Score</span>
+                <div class="risk-gauge-container">
+                  <div class="gauge-display">
+                    <svg class="risk-gauge-svg" viewBox="0 0 120 120">
+                      <circle class="gauge-bg" cx="60" cy="60" r="50"></circle>
+                      <circle class="gauge-fill" id="riskGaugeFill" cx="60" cy="60" r="50"></circle>
+                    </svg>
+                    <div class="gauge-center-text">
+                      <span class="gauge-val" id="riskScoreValue">68</span>
+                      <span class="gauge-max">/100</span>
+                    </div>
+                  </div>
+                  <div class="gauge-details">
+                    <div class="risk-factor">
+                      <span class="factor-name">UPI Phishing Spikes:</span>
+                      <span class="factor-level high">High</span>
+                    </div>
+                    <div class="risk-factor">
+                      <span class="factor-name">Zero-Day Attacks:</span>
+                      <span class="factor-level med">Moderate</span>
+                    </div>
+                    <div class="risk-factor">
+                      <span class="factor-name">Digital Arrest Fraud:</span>
+                      <span class="factor-level high">Critical</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <p class="metric-caption">Dynamic risk calculated every 30s based on live telemetry</p>
+                <div class="inspect-action-bar amber">
+                  <i data-lucide="bar-chart-2"></i>
+                  <span>Click for 14 Heuristic Vector Breakdown</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Security status -->
+          <div class="metric-card status-card clickable-card" data-inspect="status" title="Click to view defense engines, protocol health and live uptime">
+            <div class="card-glow-border green"></div>
+            <div class="card-inner">
+              <div class="card-header">
+                <div class="card-icon-box green">
+                  <i data-lucide="lock"></i>
+                </div>
+                <div class="card-badge status-live-badge">
+                  <span class="live-dot-green"></span>
+                  <span>ENFORCED</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <span class="metric-label">Security Status</span>
+                <div class="status-verdict">
+                  <h3 class="status-title" id="securityStatusTitle">SHIELD ACTIVE</h3>
+                  <span class="status-desc" id="securityStatusDesc">Heuristic Zero-Day &amp; Fraud Mitigation Active</span>
+                </div>
+                
+                <div class="status-layers">
+                  <div class="layer-item">
+                    <i data-lucide="check-circle-2" class="layer-icon ok"></i>
+                    <span>SPF / DKIM / DMARC Validation</span>
+                    <strong class="layer-state">PASS</strong>
+                  </div>
+                  <div class="layer-item">
+                    <i data-lucide="check-circle-2" class="layer-icon ok"></i>
+                    <span>Anomaly-Based AI Engine</span>
+                    <strong class="layer-state">99.4%</strong>
+                  </div>
+                  <div class="layer-item">
+                    <i data-lucide="shield-check" class="layer-icon ok"></i>
+                    <span>UPI Threat Trap</span>
+                    <strong class="layer-state">ONLINE</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="last-sync">
+                  <i data-lucide="clock"></i>
+                  <span>Telemetry heartbeat: <span id="lastSyncTime">Just now</span></span>
+                </div>
+                <div class="inspect-action-bar green">
+                  <i data-lucide="activity"></i>
+                  <span>Click for Active Engines &amp; Protocol Certs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: Zero-Day Attacks: Signature-Based vs. Anomaly-Based Detection -->
+    <section class="zeroday-section" id="zero-day-section">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <div class="header-left">
+            <div class="section-eyebrow">
+              <i data-lucide="shield-zap"></i>
+              <span>ADVANCED DEFENSE ARCHITECTURE</span>
+            </div>
+            <h2 class="section-title">Zero-Day Attack Defense: Signature vs. Anomaly Detection</h2>
+            <p class="section-desc">Understanding why traditional static databases fail against zero-day exploits, and how behavioral anomaly analysis intercepts unknown attack vectors.</p>
+          </div>
+          
+          <div class="header-right">
+            <button class="btn btn-primary-glow btn-sm" id="testZeroDaySimBtn">
+              <i data-lucide="play-circle"></i>
+              <span>Simulate Zero-Day Exploit</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="comparison-grid">
+          
+          <!-- Column 1: Signature-Based Detection -->
+          <div class="comparison-card signature-card">
+            <div class="comp-header">
+              <div class="comp-icon-wrap red-glow">
+                <i data-lucide="database"></i>
+              </div>
+              <div>
+                <span class="comp-badge legacy">TRADITIONAL METHOD</span>
+                <h3 class="comp-title">Signature-Based Detection</h3>
+              </div>
+            </div>
+
+            <div class="comp-body">
+              <p class="comp-description">
+                Compares incoming payloads, file hashes (MD5, SHA-256), and email byte headers against a known catalog of previously registered malware and blacklisted phishing URLs.
+              </p>
+
+              <div class="comp-aspects">
+                <div class="aspect-item">
+                  <span class="aspect-label">Mechanism:</span>
+                  <span class="aspect-value">Static string hashing, known CVE match, static domain blacklist</span>
+                </div>
+                <div class="aspect-item">
+                  <span class="aspect-label">Zero-Day Efficacy:</span>
+                  <span class="aspect-value text-danger"><strong>0% (Fails completely on brand new threats)</strong></span>
+                </div>
+                <div class="aspect-item">
+                  <span class="aspect-label">Speed & Overhead:</span>
+                  <span class="aspect-value">Extremely fast lookups, low CPU utilization</span>
+                </div>
+                <div class="aspect-item">
+                  <span class="aspect-label">The Fatal Flaw:</span>
+                  <span class="aspect-value text-muted">If an attacker slightly alters payload bits (polymorphism) or registers a domain 5 minutes prior, no signature exists. The attack bypasses detection undetected.</span>
+                </div>
+              </div>
+
+              <!-- Simulation output badge -->
+              <div class="sim-verdict-box" id="sigSimVerdict">
+                <div class="sim-label">Signature Engine Verdict:</div>
+                <div class="sim-result-badge safe-badge">
+                  <i data-lucide="check"></i> NO KNOWN SIGNATURE MATCH (FALSE SENSE OF SAFETY)
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Anomaly-Based Detection -->
+          <div class="comparison-card anomaly-card">
+            <div class="comp-header">
+              <div class="comp-icon-wrap cyan-glow">
+                <i data-lucide="brain-circuit"></i>
+              </div>
+              <div>
+                <span class="comp-badge next-gen">NEXT-GEN AI HEURISTICS</span>
+                <h3 class="comp-title">Anomaly-Based Detection</h3>
+              </div>
+            </div>
+
+            <div class="comp-body">
+              <p class="comp-description">
+                Constructs a dynamic mathematical baseline of normal user behavior, linguistic patterns, sending frequency, and execution graphs, immediately flagging statistical outliers.
+              </p>
+
+              <div class="comp-aspects">
+                <div class="aspect-item">
+                  <span class="aspect-label">Mechanism:</span>
+                  <span class="aspect-value">Behavioral deviation, NLP emotional coercion scoring, entropy spikes</span>
+                </div>
+                <div class="aspect-item">
+                  <span class="aspect-label">Zero-Day Efficacy:</span>
+                  <span class="aspect-value text-safe"><strong>98.4% (Catches novel, unseen zero-days)</strong></span>
+                </div>
+                <div class="aspect-item">
+                  <span class="aspect-label">Speed & Overhead:</span>
+                  <span class="aspect-value">Real-time neural inference & heuristic execution sandbox</span>
+                </div>
+                <div class="aspect-item">
+                  <span class="aspect-label">The AI Advantage:</span>
+                  <span class="aspect-value text-safe">Detects never-before-seen malicious URLs, hidden JavaScript redirect chains, and zero-day lures without waiting for vendor virus definitions.</span>
+                </div>
+              </div>
+
+              <!-- Simulation output badge -->
+              <div class="sim-verdict-box" id="anomSimVerdict">
+                <div class="sim-label">Anomaly Engine Verdict:</div>
+                <div class="sim-result-badge danger-badge">
+                  <i data-lucide="alert-triangle"></i> ZERO-DAY BEHAVIORAL ANOMALY DETECTED (QUARANTINED)
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: Common Cyber & Payment Scams in India (100–200 Words Modus Operandi) -->
+    <section class="scams-section" id="payment-scams">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <div class="header-left">
+            <div class="section-eyebrow">
+              <i data-lucide="alert-circle"></i>
+              <span>CRITICAL THREAT MODUS OPERANDI</span>
+            </div>
+            <h2 class="section-title">Major Online Payment & Cyber Scams in India</h2>
+            <p class="section-desc">Learn the step-by-step procedures used by cybercriminals to trap ordinary citizens, and the single golden rule to stay protected.</p>
+          </div>
+        </div>
+
+        <div class="scams-grid">
+          
+          <!-- Scam 1: UPI "Enter PIN to Receive Money" Fraud -->
+          <div class="scam-card">
+            <div class="scam-card-glow red"></div>
+            <div class="scam-top">
+              <div class="scam-tag payment-tag">
+                <i data-lucide="credit-card"></i> UPI / PAYMENT FRAUD
+              </div>
+              <span class="scam-severity high">CRITICAL SEVERITY</span>
+            </div>
+            <h3 class="scam-card-title">Online Payment Spam: "Enter PIN to Receive Money" Fraud</h3>
+            
+            <div class="scam-procedure">
+              <div class="procedure-label"><i data-lucide="file-text"></i> Procedure / Modus Operandi (148 words):</div>
+              <p class="procedure-text">
+                Fraudsters lurk on marketplaces like OLX, Quikr, or Facebook, pretending to be enthusiastic buyers for furniture, used phones, or army personnel on urgent transfer. Once an agreement is reached, the scammer claims they cannot transfer cash through direct bank transfer and instead share a Google Pay or PhonePe QR code or initiate a "Collect Request" notification. They deceive the seller by asserting: <em>"Scan this QR code and type your 4 or 6-digit UPI PIN to confirm and receive your ₹15,000 payment into your bank."</em> In reality, entering a UPI PIN is strictly required to <strong>DEBIT</strong> money from an account, never to receive it. The unsuspecting victim types their secret PIN, believing they are authorizing a credit, but the exact amount is instantly siphoned out. When confronted, the fraudster claims a server glitch and triggers a second higher request to supposedly reverse it.
+              </p>
+            </div>
+
+            <div class="scam-defense-rule">
+              <i data-lucide="shield-alert"></i>
+              <span><strong>GOLDEN RULE:</strong> You NEVER need to enter a UPI PIN, scan a QR code, or approve a request to RECEIVE money into your bank!</span>
+            </div>
+          </div>
+
+          <!-- Scam 2: Digital Arrest Scam -->
+          <div class="scam-card">
+            <div class="scam-card-glow purple"></div>
+            <div class="scam-top">
+              <div class="scam-tag arrest-tag">
+                <i data-lucide="video"></i> DIGITAL ARREST EXTORTION
+              </div>
+              <span class="scam-severity high">PSYCHOLOGICAL THREAT</span>
+            </div>
+            <h3 class="scam-card-title">Digital Arrest Scam (Fake Police / CBI / ED Impersonation)</h3>
+            
+            <div class="scam-procedure">
+              <div class="procedure-label"><i data-lucide="file-text"></i> Procedure / Modus Operandi (162 words):</div>
+              <p class="procedure-text">
+                The victim receives an automated call stating an international courier in their name containing narcotics, forged passports, or SIM cards has been seized by Mumbai Customs or FedEx. The call is immediately transferred to a Skype or WhatsApp video conference featuring individuals dressed in counterfeit police uniforms seated before official-looking emblems, handcuffs, and police station signboards. The fraudsters accuse the victim of multi-crore money laundering, display forged Supreme Court arrest warrants, and declare the victim under "Digital Arrest". The victim is terrified with threats of public humiliation and forbidden from disconnecting the call or informing family members. Under extreme emotional duress, the victim is coerced into liquidating fixed deposits and transferring their life savings into designated "RBI Verification Accounts" under the fraudulent assurance that the funds will be returned following a verification audit. Once transferred, the fraudsters vanish instantly.
+              </p>
+            </div>
+
+            <div class="scam-defense-rule">
+              <i data-lucide="shield-alert"></i>
+              <span><strong>GOLDEN RULE:</strong> Indian law does not recognize "Digital Arrest." Police, CBI, or judges NEVER conduct interrogations or demand money via video calls.</span>
+            </div>
+          </div>
+
+          <!-- Scam 3: Online Shopping & Fake Delivery SMS Fraud -->
+          <div class="scam-card">
+            <div class="scam-card-glow amber"></div>
+            <div class="scam-top">
+              <div class="scam-tag shopping-tag">
+                <i data-lucide="shopping-bag"></i> E-COMMERCE FRAUD
+              </div>
+              <span class="scam-severity med">WIDESPREAD THREAT</span>
+            </div>
+            <h3 class="scam-card-title">Fake Online Shopping & Delivery Address Link Fraud</h3>
+            
+            <div class="scam-procedure">
+              <div class="procedure-label"><i data-lucide="file-text"></i> Procedure / Modus Operandi (138 words):</div>
+              <p class="procedure-text">
+                Cybercriminals deploy fraudulent advertisements on Instagram and Facebook offering 90% discounts on premium electronics, claiming to be official clearance sales from Amazon or Flipkart. Clicking the link takes victims to a cloned payment portal that steals credit card credentials and CVVs. Simultaneously, scammers blast bulk SMS messages posing as India Post or BlueDart stating: <em>"Your package cannot be delivered due to incomplete house address. Update address within 12 hours or item will be returned: http://indiapost-update-parcel.in."</em> The link prompts the user to input address details and pay a nominal ₹5 or ₹10 redelivery fee. When the victim enters their debit card and OTP, background screen-reading malware or cloned payment gateways manipulate the transaction, siphoning thousands of rupees instead.
+              </p>
+            </div>
+
+            <div class="scam-defense-rule">
+              <i data-lucide="shield-alert"></i>
+              <span><strong>GOLDEN RULE:</strong> Never click postal or delivery links from unknown SMS numbers. Always track parcels through official courier apps directly.</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: Citizen Scam Reporting & Community Safety Hub -->
+    <section class="reporting-section" id="scam-reporting">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <div class="header-left">
+            <div class="section-eyebrow">
+              <i data-lucide="message-square-share"></i>
+              <span>COMMUNITY SAFETY & FRAUD REGISTRY</span>
+            </div>
+            <h2 class="section-title">Citizen Scam Registry & Community Safety Ideas</h2>
+            <p class="section-desc">Explore fictional AI-assisted scam awareness examples, then share a safety tip using an alias. Criminals may misuse AI; this is not evidence that AI itself caused these fictional cases. The reporting form is a local prototype and does not submit to authorities.</p>
+          </div>
+
+          <div class="header-right">
+            <div class="privacy-badge">
+              <i data-lucide="shield-check"></i>
+              <span>PRIVACY: Use an alias • phone numbers masked in public • never share PINs, OTPs, or identity numbers</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="citizen-ai-dashboard">
+          <div class="citizen-ai-dashboard-header">
+            <div>
+              <div class="section-eyebrow"><i data-lucide="chart-pie"></i><span>AI TRUST &amp; SCAM AWARENESS • DEMO</span></div>
+              <h3>Fictional AI-assisted scam case studies</h3>
+              <p>Explore 50 generated examples of AI-themed deception, safer choices, and recovery support. They are not real people, reports, survey results, or statistics.</p>
+            </div>
+            <span class="synthetic-data-badge">50 SYNTHETIC EXAMPLES</span>
+          </div>
+          <div class="identity-demo-warning">Scammers can misuse voice cloning, deepfakes, chatbots, or AI-written offers. AI can also make mistakes. Verify claims through a separate, trusted official channel. No real PIN, OTP, phone number, or identity data appears in these examples.</div>
+
+          <div class="citizen-ai-summary" aria-live="polite">
+            <div><span>Fictional examples</span><strong id="citizenAiTotal">50</strong></div>
+            <div><span>Scammed in scenario</span><strong id="citizenAiScammed">25</strong></div>
+            <div><span>Avoided loss in scenario</span><strong id="citizenAiProtected">15</strong></div>
+            <div><span>Trust rebuilt with verified support</span><strong id="citizenAiRecovery">10</strong></div>
+          </div>
+
+          <div class="citizen-ai-charts">
+            <article class="citizen-ai-chart-card">
+              <h4>Scenario outcomes (fictional; recovery is not by AI)</h4>
+              <div class="citizen-ai-chart-content">
+                <div class="identity-pie-chart" id="citizenAiOutcomePie" role="img" aria-label="Synthetic scenario outcomes"></div>
+                <ul class="identity-chart-legend" id="citizenAiOutcomeLegend"></ul>
+              </div>
+            </article>
+            <article class="citizen-ai-chart-card">
+              <h4>AI-enabled scam tactics in examples</h4>
+              <div class="identity-bar-list" id="citizenAiTacticBars"></div>
+              <p>Counts describe only the generated demo set, not real-world prevalence. Support means contacting a bank/payment provider or official helpline—not AI recovering funds.</p>
+            </article>
+          </div>
+
+          <div class="synthetic-cases-header">
+            <div>
+              <h4>Demo case stories</h4>
+              <p>Aliases and masked placeholder contacts only. PINs and other secrets are never shown.</p>
+            </div>
+            <span class="feed-count-badge" id="syntheticCasesPageLabel">Examples 1–10 of 50</span>
+          </div>
+          <div class="synthetic-cases-grid" id="syntheticAiCases"></div>
+          <div class="synthetic-cases-pagination">
+            <button type="button" class="btn btn-secondary-cyber btn-sm" id="syntheticCasesPrevious" disabled>Previous</button>
+            <span id="syntheticCasesPageStatus" aria-live="polite">Page 1 of 5</span>
+            <button type="button" class="btn btn-secondary-cyber btn-sm" id="syntheticCasesNext">Next</button>
+          </div>
+        </div>
+
+        <div class="forum-grid">
+          
+          <!-- Left: Citizen Submission Form -->
+          <div class="forum-form-card">
+            <div class="form-card-header">
+              <i data-lucide="shield-alert" class="text-cyan"></i>
+              <h3>Report an Incident or Share Safety Advice</h3>
+            </div>
+            
+            <form id="scamReportForm" class="scam-form">
+              
+              <div class="input-group">
+                <label for="reporterName">
+                  <i data-lucide="user"></i> Public alias <span class="req">*</span>
+                </label>
+                <input type="text" id="reporterName" class="cyber-input" placeholder="Choose a nickname; do not use your full name" maxlength="40" required>
+                <span class="field-hint">This alias will be visible on the public board. Do not use your full name.</span>
+              </div>
+
+              <p class="identity-demo-warning">This local demo does not collect phone numbers or locations. Never enter a UPI/ATM PIN, password, OTP, Aadhaar number, card number, bank details, or exact address in your story.</p>
+
+              <div class="form-row">
+                <div class="input-group">
+                  <label for="scamCategory">
+                    <i data-lucide="tag"></i> Scam Category <span class="req">*</span>
+                  </label>
+                  <select id="scamCategory" class="cyber-select" required>
+                    <option value="UPI PIN / Online Payment Scam">UPI PIN / Online Payment Fraud</option>
+                    <option value="Digital Arrest Scam">Digital Arrest (CBI/Police Video Call)</option>
+                    <option value="Fake Online Shopping & Delivery">Fake Online Shopping / Delivery SMS</option>
+                    <option value="Part-time Telegram Job Scam">Work from Home / Telegram Task Fraud</option>
+                    <option value="Electricity Bill Disconnection SMS">Electricity Bill Disconnection Fraud</option>
+                    <option value="Other Cyber Scam">Other Cyber Threat</option>
+                  </select>
+                </div>
+
+                <div class="input-group">
+                  <label for="amountTrapped">
+                    <i data-lucide="indian-rupee"></i> Rupees Trapped / Lost (₹)
+                  </label>
+                  <input type="number" id="amountTrapped" class="cyber-input" placeholder="e.g. 25000" min="0">
+                  <span class="field-hint text-cyan"><i data-lucide="lock" class="hint-icon"></i> Do not include financial account or PIN details</span>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="scamProcedure">
+                  <i data-lucide="file-text"></i> Procedure: How were you / they scammed? <span class="req">*</span>
+                </label>
+                <textarea id="scamProcedure" class="cyber-textarea" rows="4" placeholder="Briefly describe how the scam worked. Do not include any private codes or account details." required></textarea>
+                <div class="word-counter-wrap">
+                  <span id="wordCountLabel">Word Count: 0 words</span>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="safetySuggestion">
+                  <i data-lucide="lightbulb"></i> How to Stay Safe: Your Suggestion / Advice for Public <span class="req">*</span>
+                </label>
+                <textarea id="safetySuggestion" class="cyber-textarea" rows="3" placeholder="Share your actionable advice so others do not fall for this trap..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary-glow btn-block">
+                <i data-lucide="send"></i>
+                <span>Publish Report & Safety Suggestion</span>
+              </button>
+
+            </form>
+          </div>
+
+          <!-- Right: Community Safety Feed & Case Registry -->
+          <div class="forum-feed-card">
+            <div class="feed-card-header">
+              <div class="feed-title-wrap">
+                <i data-lucide="list-checks" class="text-cyan"></i>
+                <h3>Community Safety Advice & Reported Cases</h3>
+              </div>
+              <span class="feed-count-badge" id="reportCountBadge">3 Reports Loaded</span>
+            </div>
+
+            <!-- List of citizen submissions -->
+            <div class="reported-cases-list" id="reportedCasesList">
+              <!-- Dynamically populated or pre-populated via JS -->
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: Interactive Email Phishing Scanner / Simulator -->
+    <section class="scanner-section" id="live-scanner">
+      <div class="section-container">
+        
+        <div class="scanner-wrapper">
+          <div class="scanner-header">
+            <div class="scanner-title-group">
+              <div class="section-eyebrow">
+                <i data-lucide="cpu"></i>
+                <span>LIVE PHISHING LAB</span>
+              </div>
+              <h2 class="section-title">Zero-Day Email Phishing Analyzer</h2>
+              <p class="section-desc">Test sample lures or input suspicious email text to inspect real-time heuristic phishing classification.</p>
+            </div>
+            
+            <div class="scanner-presets">
+              <span class="presets-label">Load Sample Lure:</span>
+              <button class="preset-btn" data-sample="upi-cashback">💸 UPI ₹5000 Cashback</button>
+              <button class="preset-btn" data-sample="urgent-bank">🏦 Bank KYC Suspended</button>
+              <button class="preset-btn" data-sample="ceo-fraud">👔 CEO Wire Fraud</button>
+              <button class="preset-btn" data-sample="password-reset">🔑 M365 Password Reset</button>
+              <button class="preset-btn" data-sample="legit-meeting">💼 Legit Meeting</button>
+            </div>
+          </div>
+
+          <div class="scanner-grid">
+            
+            <!-- Left: Input Form -->
+            <div class="scanner-input-card">
+              <div class="input-group">
+                <label for="senderInput">
+                  <i data-lucide="user"></i>
+                  <span>Sender Address (From:)</span>
+                </label>
+                <input type="text" id="senderInput" class="cyber-input" placeholder="e.g. support@phonepe-cashback-portal.net" value="cashback-reward@paytm-rewards-upi.xyz">
+              </div>
+
+              <div class="input-group">
+                <label for="subjectInput">
+                  <i data-lucide="tag"></i>
+                  <span>Email Subject Line</span>
+                </label>
+                <input type="text" id="subjectInput" class="cyber-input" placeholder="e.g. Action Required: Your Account Has Been Suspended" value="CONGRATULATIONS: You Won ₹4,999 Festive UPI Cashback - Enter PIN to Claim">
+              </div>
+
+              <div class="input-group">
+                <label for="bodyInput">
+                  <i data-lucide="file-text"></i>
+                  <span>Email Body Content</span>
+                </label>
+                <textarea id="bodyInput" class="cyber-textarea" rows="6" placeholder="Paste the suspicious email contents here...">Dear Customer,
+
+Your registered mobile number has been selected for the National Digital Payment Festive Cashback of ₹4,999.00!
+This cashback will expire in 15 minutes if uncollected.
+
+Follow these steps to claim funds directly into your bank:
+1. Click the secure claim link below:
+http://upi-rewards-cashback-collect.xyz/auth?user_id=74829
+2. Scan the dynamic QR code on screen.
+3. Enter your 6-digit UPI PIN to verify and accept payment into your account.
+
+NPCI Unified Payments Support</textarea>
+              </div>
+
+              <div class="scanner-controls">
+                <button class="btn btn-primary-glow btn-block" id="runScanBtn">
+                  <i data-lucide="radar"></i>
+                  <span>Analyze Email for Threats</span>
+                </button>
+                <button class="btn btn-secondary-cyber" id="clearScanBtn">
+                  <i data-lucide="trash-2"></i>
+                  <span>Clear</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Analysis Output Verdict -->
+            <div class="scanner-result-card" id="scanResultCard">
+              <div class="result-header">
+                <div class="result-status-banner danger" id="verdictBanner">
+                  <div class="verdict-icon-wrap" id="verdictIcon">
+                    <i data-lucide="alert-triangle"></i>
+                  </div>
+                  <div class="verdict-text-wrap">
+                    <span class="verdict-tag" id="verdictTag">HIGH CONFIDENCE THREAT</span>
+                    <h3 class="verdict-title" id="verdictTitle">UPI PAYMENT PHISHING DETECTED</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="result-body">
+                <div class="score-breakdown-row">
+                  <div class="score-box">
+                    <span class="score-title">Threat Probability</span>
+                    <span class="score-num threat-red" id="resThreatScore">96%</span>
+                  </div>
+                  <div class="score-box">
+                    <span class="score-title">Detection Vector</span>
+                    <span class="score-label" id="resVector">UPI PIN Deception</span>
+                  </div>
+                  <div class="score-box">
+                    <span class="score-title">Recommended Action</span>
+                    <span class="score-label safe-badge" id="resAction">Quarantine Immediately</span>
+                  </div>
+                </div>
+
+                <div class="findings-list">
+                  <h4 class="findings-title">
+                    <i data-lucide="binary"></i>
+                    <span>Heuristic Findings & Red Flags</span>
+                  </h4>
+                  <ul class="flag-items" id="flagItemsList">
+                    <li class="flag-item red">
+                      <i data-lucide="x-circle"></i>
+                      <span><strong>UPI PIN Deception:</strong> Phishing lure explicitly tricks user into entering their UPI PIN under false pretense of receiving money.</span>
+                    </li>
+                    <li class="flag-item red">
+                      <i data-lucide="x-circle"></i>
+                      <span><strong>Suspicious Domain TLD:</strong> Sender domain uses untrusted TLD (.xyz) commonly utilized in disposable scam infrastructure.</span>
+                    </li>
+                    <li class="flag-item red">
+                      <i data-lucide="x-circle"></i>
+                      <span><strong>Psychological Pressure:</strong> Exploits false urgency ("expire in 15 minutes") to rush victim.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="result-footer">
+                <div class="action-feedback">
+                  <i data-lucide="shield-check"></i>
+                  <span>Zero-day threat signature generated and pushed to national gateway blocklist.</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: 2FA & Biometric Identity Lab -->
+    <section class="identity-lab-section" id="two-factor-biometric">
+      <div class="section-container">
+
+        <div class="section-header">
+          <div class="header-left">
+            <div class="section-eyebrow">
+              <i data-lucide="fingerprint"></i>
+              <span>2FA &amp; BIOMETRIC ACCESS CONTROL</span>
+            </div>
+            <h2 class="section-title">Identity Verification Lab</h2>
+            <p class="section-desc">Verify a mobile number to view a demo profile. Profile and biometric update flows are simulated and must not be used with real identity or biometric data.</p>
+          </div>
+
+          <div class="header-right">
+            <div class="security-badge">
+              <i data-lucide="shield-check"></i>
+              <span>SIMULATED OTP • DEMO ONLY • NO IDENTITY DATA COLLECTION</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="identity-lab-grid">
+          <div class="identity-lab-card">
+            <div class="lab-step">
+              <span class="step-number">01</span>
+              <div>
+                <h3>Mobile Number Verification</h3>
+                <p>Verify the linked mobile number before viewing the demo identity profile.</p>
+              </div>
+            </div>
+
+            <div class="lab-form-row">
+              <label for="identityMobile">
+                <i data-lucide="smartphone"></i> Mobile Number
+              </label>
+              <input type="tel" id="identityMobile" class="cyber-input" placeholder="e.g. +91 98765 43210">
+            </div>
+
+            <div class="lab-actions">
+              <button type="button" class="btn btn-primary-glow btn-sm" id="sendOtpBtn">
+                <i data-lucide="send"></i>
+                <span>Send OTP</span>
+              </button>
+            </div>
+
+            <div id="otpStatus" class="otp-status">No OTP has been sent yet.</div>
+
+            <div class="lab-form-row">
+              <label for="otpInput">
+                <i data-lucide="key-round"></i> Enter OTP
+              </label>
+              <input type="text" id="otpInput" class="cyber-input" maxlength="6" placeholder="6-digit OTP">
+            </div>
+
+            <div class="lab-actions">
+              <button type="button" class="btn btn-secondary-cyber btn-sm" id="verifyOtpBtn">
+                <i data-lucide="check-circle"></i>
+                <span>Verify OTP &amp; Open Identity Lab</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="identity-lab-card result-panel">
+            <div class="lab-step">
+              <span class="step-number">02</span>
+              <div>
+                <h3>Identity Theft Risk Analysis</h3>
+                <p>Review the phone and Aadhaar test signals together after completing step 03. Unavailable checks are identified explicitly.</p>
+              </div>
+            </div>
+
+            <div id="identityResultBox" class="identity-result">
+              <div class="identity-status neutral">
+                <i data-lucide="shield"></i>
+                <span>Awaiting OTP verification</span>
+              </div>
+              <ul>
+                <li>Mobile number and OTP verification: pending</li>
+                <li>Aadhaar test-number format and pattern: pending</li>
+                <li>SIM swap and device compromise: unavailable</li>
+                <li>Biometric and document/profile mismatch: unavailable</li>
+              </ul>
+              <p class="identity-demo-warning">Prototype only: this is not a complete identity-theft check and cannot verify Aadhaar, SIM ownership, biometrics, documents, or account activity.</p>
+            </div>
+          </div>
+
+          <div class="identity-lab-card" id="identityAadhaarPanel" hidden>
+            <div class="lab-step">
+              <span class="step-number">03</span>
+              <div>
+                <h3>Aadhaar Test Verification</h3>
+                <p>Verify a test number after phone OTP. This enables the combined demo risk analysis in step 02.</p>
+              </div>
+            </div>
+
+            <p class="identity-demo-warning">Demo only: never enter a real Aadhaar number. The test number is checked locally for length and simple patterns, then discarded. No Aadhaar service is contacted.</p>
+            <div class="lab-form-row">
+              <label for="identityAadhaarInput"><i data-lucide="fingerprint"></i> 12-digit test number</label>
+              <input type="password" id="identityAadhaarInput" class="cyber-input" inputmode="numeric" autocomplete="off" maxlength="12" placeholder="Enter a test value only">
+            </div>
+            <div class="lab-actions">
+              <button type="button" class="btn btn-primary-glow btn-sm" id="sendIdentityAadhaarOtpBtn">Send demo OTP</button>
+            </div>
+            <div class="otp-status" id="identityAadhaarStatus" aria-live="polite">Verify the mobile number first.</div>
+            <div class="lab-form-row">
+              <label for="identityAadhaarOtpInput"><i data-lucide="key-round"></i> Aadhaar-linked mobile OTP (simulated)</label>
+              <input type="text" id="identityAadhaarOtpInput" class="cyber-input" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="6-digit OTP">
+            </div>
+            <button type="button" class="btn btn-secondary-cyber btn-sm" id="verifyIdentityAadhaarOtpBtn">Verify and run risk analysis</button>
+          </div>
+
+          <div class="identity-analytics" id="identityAnalytics">
+            <div class="identity-analytics-header">
+              <div>
+                <div class="section-eyebrow"><i data-lucide="chart-pie"></i><span>SIMULATED IDENTITY ANALYTICS</span></div>
+                <h3>50-Profile Demo Cohort</h3>
+                <p>All cohort entries are generated test records, not real people or reports. Completing the verification above adds one anonymous demo result.</p>
+              </div>
+              <span class="identity-cohort-count" id="identityCohortCount">50 demo records</span>
+            </div>
+            <p class="identity-demo-warning">“Verified” means the local demo OTP steps were completed. “Risk flagged” means a simple digit pattern matched; it does not mean identity theft. No phone or Aadhaar number is included in this chart data.</p>
+
+            <div class="identity-analytics-summary" aria-live="polite">
+              <div><span>Demo records</span><strong id="identityTotalCount">50</strong></div>
+              <div><span>Steps completed</span><strong id="identityVerifiedCount">42</strong></div>
+              <div><span>Awaiting OTP</span><strong id="identityPendingCount">8</strong></div>
+              <div><span>Pattern flagged</span><strong id="identityFlaggedCount">9</strong></div>
+            </div>
+
+            <div class="identity-charts-grid">
+              <article class="identity-chart-card">
+                <h4>Verification progress</h4>
+                <div class="identity-chart-content">
+                  <div class="identity-pie-chart" id="verificationPie" role="img" aria-label="42 verified and 8 awaiting verification"></div>
+                  <ul class="identity-chart-legend" id="verificationLegend"></ul>
+                </div>
+              </article>
+              <article class="identity-chart-card">
+                <h4>Demo pattern analysis</h4>
+                <div class="identity-chart-content">
+                  <div class="identity-pie-chart" id="riskPie" role="img" aria-label="Demo risk pattern summary"></div>
+                  <ul class="identity-chart-legend" id="riskLegend"></ul>
+                </div>
+              </article>
+              <article class="identity-chart-card identity-pattern-chart">
+                <h4>Pattern checks among completed demos</h4>
+                <div class="identity-bar-list" id="identityPatternBars"></div>
+                <p>Checks may overlap. A flagged pattern is not evidence of identity theft.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="identity-management-grid" id="identityManagementGrid" hidden>
+            <div class="identity-lab-card">
+              <div class="lab-step">
+                <span class="step-number">04</span>
+                <div>
+                  <h3>Verified Identity Details</h3>
+                  <p>Demo data only. Choose an update to repeat Aadhaar OTP verification.</p>
+                </div>
+              </div>
+
+              <div class="identity-profile-grid" id="identityProfileDetails">
+                <div><span>Full name</span><strong id="profileName">Ishaan Sharma</strong></div>
+                <div><span>Father's name</span><strong id="profileFatherName">Rajesh Sharma</strong></div>
+                <div><span>Address</span><strong id="profileAddress">Demo profile address</strong></div>
+                <div><span>Linked mobile</span><strong id="profilePhone">Not provided</strong></div>
+              </div>
+
+              <button type="button" class="btn btn-secondary-cyber btn-sm identity-management-action" id="startProfileUpdateBtn">
+                <i data-lucide="file-pen-line"></i>
+                <span>Update identity details</span>
+              </button>
+
+              <div class="identity-update-panel" id="profileAadhaarPanel" hidden>
+                <p class="identity-demo-warning">Prototype only: do not enter a real Aadhaar number. No number is sent or saved. OTPs are simulated and displayed on this page.</p>
+                <div class="lab-form-row">
+                  <label for="profileAadhaarInput"><i data-lucide="fingerprint"></i> Demo Aadhaar number</label>
+                  <input type="password" id="profileAadhaarInput" class="cyber-input" inputmode="numeric" autocomplete="off" maxlength="12" placeholder="12-digit test number">
+                </div>
+                <div class="lab-actions">
+                  <button type="button" class="btn btn-primary-glow btn-sm" id="sendProfileAadhaarOtpBtn">Send demo OTP</button>
+                </div>
+                <div class="otp-status" id="profileAadhaarStatus" aria-live="polite">A fresh verification is required for each update.</div>
+                <div class="lab-form-row">
+                  <label for="profileAadhaarOtpInput"><i data-lucide="key-round"></i> Aadhaar-linked mobile OTP (simulated)</label>
+                  <input type="text" id="profileAadhaarOtpInput" class="cyber-input" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="6-digit OTP">
+                </div>
+                <button type="button" class="btn btn-secondary-cyber btn-sm" id="verifyProfileAadhaarOtpBtn">Verify and unlock fields</button>
+              </div>
+
+              <form class="identity-update-panel" id="profileUpdateForm" hidden>
+                <div class="lab-form-row">
+                  <label for="profileNameInput">Correct full name</label>
+                  <input type="text" id="profileNameInput" class="cyber-input" maxlength="100" required>
+                </div>
+                <div class="lab-form-row">
+                  <label for="profileFatherNameInput">Correct father's name</label>
+                  <input type="text" id="profileFatherNameInput" class="cyber-input" maxlength="100" required>
+                </div>
+                <div class="lab-form-row">
+                  <label for="profileAddressInput">Correct address</label>
+                  <textarea id="profileAddressInput" class="cyber-input" rows="3" maxlength="300" required></textarea>
+                </div>
+                <div class="lab-form-row">
+                  <label for="profilePhoneInput">Updated mobile number</label>
+                  <input type="tel" id="profilePhoneInput" class="cyber-input" inputmode="tel" autocomplete="off" maxlength="20" required>
+                </div>
+                <div class="identity-update-panel" id="phoneUpdateConfirmationPanel" hidden>
+                  <div class="otp-status" id="phoneUpdateStatus" aria-live="polite"></div>
+                  <div class="lab-form-row">
+                    <label for="phoneUpdateOtpInput">Updated mobile confirmation OTP (simulated)</label>
+                    <input type="text" id="phoneUpdateOtpInput" class="cyber-input" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="6-digit OTP">
+                  </div>
+                  <button type="button" class="btn btn-secondary-cyber btn-sm" id="verifyPhoneUpdateOtpBtn">Verify new mobile and save</button>
+                </div>
+                <button type="submit" class="btn btn-primary-glow btn-sm">Save demo profile changes</button>
+                <div class="otp-status" id="profileUpdateStatus" aria-live="polite"></div>
+              </form>
+            </div>
+
+            <div class="identity-lab-card">
+              <div class="lab-step">
+                <span class="step-number">05</span>
+                <div>
+                  <h3>Biometric Verification Update</h3>
+                  <p>Re-verify with a demo Aadhaar OTP to unlock simulated biometric options.</p>
+                </div>
+              </div>
+
+              <div class="identity-biometrics-status" id="biometricStatus">
+                <span>Eye scan</span><strong>Not updated (demo)</strong>
+                <span>Fingerprint</span><strong>Not updated (demo)</strong>
+                <span>Hand print</span><strong>Not updated (demo)</strong>
+              </div>
+
+              <button type="button" class="btn btn-secondary-cyber btn-sm identity-management-action" id="startBiometricUpdateBtn">
+                <i data-lucide="scan-face"></i>
+                <span>Verify to update biometrics</span>
+              </button>
+
+              <div class="identity-update-panel" id="biometricAadhaarPanel" hidden>
+                <p class="identity-demo-warning">Prototype only: do not enter a real Aadhaar number or provide biometric scans. This demo does not access a camera or scanner.</p>
+                <div class="lab-form-row">
+                  <label for="biometricAadhaarInput"><i data-lucide="fingerprint"></i> Demo Aadhaar number</label>
+                  <input type="password" id="biometricAadhaarInput" class="cyber-input" inputmode="numeric" autocomplete="off" maxlength="12" placeholder="12-digit test number">
+                </div>
+                <div class="lab-actions">
+                  <button type="button" class="btn btn-primary-glow btn-sm" id="sendBiometricAadhaarOtpBtn">Send demo OTP</button>
+                </div>
+                <div class="otp-status" id="biometricAadhaarStatus" aria-live="polite">A fresh verification is required for each update.</div>
+                <div class="lab-form-row">
+                  <label for="biometricAadhaarOtpInput"><i data-lucide="key-round"></i> Aadhaar-linked mobile OTP (simulated)</label>
+                  <input type="text" id="biometricAadhaarOtpInput" class="cyber-input" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="6-digit OTP">
+                </div>
+                <button type="button" class="btn btn-secondary-cyber btn-sm" id="verifyBiometricAadhaarOtpBtn">Verify and unlock options</button>
+              </div>
+
+              <div class="identity-update-panel" id="biometricOptionsPanel" hidden>
+                <p class="identity-demo-warning">Select demo updates only. No biometric capture or processing takes place.</p>
+                <label class="identity-biometric-option"><input type="checkbox" name="biometricUpdate" value="Eye scan"> Eye scan (simulate update)</label>
+                <label class="identity-biometric-option"><input type="checkbox" name="biometricUpdate" value="Fingerprint"> Fingerprint (simulate update)</label>
+                <label class="identity-biometric-option"><input type="checkbox" name="biometricUpdate" value="Hand print"> Hand print (simulate update)</label>
+                <button type="button" class="btn btn-primary-glow btn-sm identity-management-action" id="requestBiometricConfirmOtpBtn">Send confirmation OTP before saving</button>
+                <div class="otp-status" id="biometricConfirmStatus" aria-live="polite">Select at least one demo update.</div>
+                <div class="lab-form-row">
+                  <label for="biometricConfirmOtpInput"><i data-lucide="key-round"></i> Linked mobile confirmation OTP (simulated)</label>
+                  <input type="text" id="biometricConfirmOtpInput" class="cyber-input" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="6-digit OTP">
+                </div>
+                <button type="button" class="btn btn-secondary-cyber btn-sm" id="confirmBiometricUpdateBtn">Confirm and save demo update</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Cyber Footer -->
+  <footer class="cyber-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <i data-lucide="shield-check"></i>
+          <span>PHISHGUARD SENTINEL INDIA</span>
+        </div>
+        <p class="footer-copy">National Cyber Threat Intelligence, Zero-Day Heuristics & Citizen Fraud Awareness Platform.</p>
+      </div>
+
+      <div class="footer-badges">
+        <span class="footer-badge">UPI FRAUD MITIGATION</span>
+        <span class="footer-badge">ZERO-DAY ANOMALY AI</span>
+        <span class="footer-badge">DPDP PRIVACY COMPLIANT</span>
+        <span class="footer-badge">NATIONAL 1930 HELPLINE AWARENESS</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Admin Login Modal -->
+  <div class="cyber-modal-overlay" id="adminLoginModal">
+    <div class="cyber-modal-dialog small-modal">
+      <div class="modal-card admin-login-card">
+        <div class="modal-header">
+          <div class="modal-header-left">
+            <div class="modal-icon-wrap danger-icon">
+              <i data-lucide="lock"></i>
+            </div>
+            <div>
+              <div class="modal-eyebrow">RESTRICTED ADMIN ACCESS</div>
+              <h2 class="modal-title">Cyber Cell Admin Login</h2>
+            </div>
+          </div>
+          <button class="btn-modal-close" id="closeAdminLoginBtn" title="Close Admin Login">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+
+        <form id="adminLoginForm" class="admin-login-form">
+          <div class="input-group">
+            <label for="adminUsername">
+              <i data-lucide="user"></i> Username
+            </label>
+            <input type="text" id="adminUsername" class="cyber-input" placeholder="Enter username" autocomplete="username" required>
+          </div>
+
+          <div class="input-group">
+            <label for="adminPassword">
+              <i data-lucide="key-round"></i> Password
+            </label>
+            <input type="password" id="adminPassword" class="cyber-input" placeholder="Enter password" autocomplete="current-password" required>
+          </div>
+
+          <div class="admin-login-error" id="adminLoginError"></div>
+          <p class="identity-demo-warning">Demo-only login. Credentials are checked in browser code and cannot secure real administrative data.</p>
+
+          <button type="submit" class="btn btn-primary-glow" id="adminLoginSubmitBtn">
+            <i data-lucide="shield-check"></i>
+            <span>Authenticate Access</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORENSICS DEEP DETAIL MODAL (Opens when clicking any of the 4 overview cards) -->
+  <div class="cyber-modal-overlay" id="cyberDetailModalOverlay">
+    <div class="cyber-modal-dialog">
+      <div class="modal-card">
+        
+        <div class="modal-header">
+          <div class="modal-header-left">
+            <div class="modal-icon-wrap" id="modalIconWrap">
+              <i data-lucide="crosshair"></i>
+            </div>
+            <div>
+              <div class="modal-eyebrow" id="modalEyebrow">FORENSIC THREAT INTELLIGENCE</div>
+              <h2 class="modal-title" id="modalTitle">Threats Detected: Deep Investigation</h2>
+            </div>
+          </div>
+          <button class="btn-modal-close" id="closeModalBtn" title="Close Forensics Modal">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+
+        <div class="modal-body" id="modalBodyContent">
+          <!-- Dynamic Forensics Details Loaded via JS -->
+        </div>
+
+        <div class="modal-footer">
+          <div class="modal-footer-left">
+            <span class="live-ping-mini"></span>
+            <span>Real-time forensic telemetry synchronized with National Cyber Cell &amp; Global Botnet Feeds</span>
+          </div>
+          <div class="modal-footer-actions">
+            <button class="btn btn-secondary-cyber btn-sm" id="closeModalBtnSecondary">
+              <span>Close Forensics</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
